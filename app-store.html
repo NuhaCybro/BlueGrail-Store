@@ -21,6 +21,7 @@
 <body>
 
     <header class="bs-border_btm">
+        <!-- NAVBAR -->
         <nav class="navbar navbar-expand-lg bg-top-navbar">
             <div class="container-fluid px-5">
                 <a class="navbar-brand" href="#">
@@ -30,19 +31,19 @@
                 </a>
 
                 <form class="search-form d-flex align-items-center position-relative">
-                    <button class="position-absolute btn my-2 my-sm-0 search-icon bs-search_icon" type="submit">
+                    <button class="position-absolute btn my-2 my-sm-0 search-icon bs-search-icon" type="submit">
                         <i class="ri-search-line"></i>
                     </button>
-                    <input class="form-control mr-sm-2 pl-3 bs-search_bar" type="search"
+                    <input class="form-control mr-sm-2 pl-3 bs-searchbar" type="search"
                         placeholder="Search for apps, categories, versions and more" aria-label="Search">
                 </form>
 
                 <ul class="navbar-nav">
                     <li class="nav-item bs-nav_item">
-                        <a class="nav-link bs-nav_item--link active" href="#app">App</a>
+                        <a class="nav-link bs-nav_item__link active" href="#app">Apps</a>
                     </li>
                     <li class="nav-item bs-nav_item">
-                        <a class="nav-link bs-nav_item--link" href="#theme">Theme</a>
+                        <a class="nav-link bs-nav_item__link" href="#theme">Theme</a>
                     </li>
                 </ul>
 
@@ -54,8 +55,46 @@
             </div>
 
         </nav>
+        <!-- END OF NAVBAR -->
     </header>
+    
+    <div class="container-fluid px-5">
+        <section class="bs-section">
+            <div class="bg-section-header">
+                <h2 class="bs-section-header-title">Top Apps</h2>
+                <a href="#" class="bs-section-header-link">View All</a>
+            </div>
 
+            <div class="bs-apps-card">
+                <div class="bs-apps-card__banner-container">
+                    <img src="./images/banner-icon/magento-banner.jpeg" alt="Magento 2 Connector" class="bs-apps-card__banner" />
+                </div>
+                <div class="bs-apps-card__content">
+                    <div class="bs-apps-card__icon-container">
+                        <img src="./images/banner-icon/magento-icon.png" alt="Magento 2 Connector" class="bs-apps-card__icon" />
+                    </div>
+                    <div class="bs-apps-card__meta">
+                        <h3 class="bs-apps-card__title">Magento 2 Connector</h3>
+                        <p class="bs-apps-card__vendor">Cybrosys Technologies</p>
+                        <div class="bs-apps-card__meta">
+                            <ul class="bs-apps-card__meta-items">
+                                <li class="bs-apps-card__meta-item">
+                                    <ul class="bs-stars">
+                                        <li class="bs-star bs-star--full"></li>
+                                        <li class="bs-star bs-star--full"></li>
+                                        <li class="bs-star bs-star--full"></li>
+                                        <li class="bs-star bs-star--half"></li>
+                                        <li class="bs-star bs-star--empty"></li>
+                                       <span class="bs-stars__rating">(80)</span>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 

@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
+@import "base/variables", "base/header", "base/buttons", "base/cards", "base/stars",
+  "base/basic-style";
 
-@import
-"base/variables","base/header",'base/buttons','base/basic-style';
-
-@import 
-"pages/app.scss";
+@import "pages/app.scss";
