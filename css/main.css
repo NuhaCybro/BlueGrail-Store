@@ -1,4 +1,63 @@
-.bs-heading {
-  color: #3E54D5;
-  background-color: #5EB717;
+.bs-search_bar {
+  padding: 0.575rem 0.75rem 0.575rem 2rem;
+  font-size: 12.8px;
+  border: 1px solid #DCDCDC;
+  border-radius: 2px;
+  background-color: #ffffff;
+  color: #787878;
+  width: 500px;
+}
+
+.bs-search_icon {
+  color: #787878;
+}
+
+.bs-logo_text {
+  font-size: 18px;
+  color: #434343;
+  font-weight: 400;
+}
+
+.bs-nav_item--link {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.8rem 1.2rem;
+}
+
+.bs-nav_item--link.active {
+  background-color: #F5F5F5;
+  border-radius: 50px;
+}
+
+.bs-nav_item {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bs-button {
+  border: 1px solid #DFDFDF;
+  -webkit-filter: drop-shadow(0px 0.5px 2px rgba(0, 0, 0, 0.15));
+          filter: drop-shadow(0px 0.5px 2px rgba(0, 0, 0, 0.15));
+  font-size: 12.8px;
+  font-weight: 500;
+}
+
+body {
+  font-family: "Fira Sans", sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+.bs-border_btm {
+  border-bottom: 1px solid #DCDCDC;
 }
