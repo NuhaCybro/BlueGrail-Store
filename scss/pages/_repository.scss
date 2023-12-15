@@ -1,0 +1,81 @@
+.bs-repo-card-app_icon {
+    position: static;
+    width: 54px;
+    height: 54px;
+    border-radius: 0.5rem;
+}
+
+.bs-repo__card {
+    border-radius: 0.5rem;
+}
+
+.bs-repo-card__title {
+    font-weight: 400;
+    width: 240px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+}
+
+.bs-apps-repo__content {
+    padding: 1rem;
+
+}
+
+.bs-repo_detail {
+    display: flex;
+    gap: 0.8rem;
+}
+
+
+.bs-repo_branch-state {
+    color: $primaryfont-color;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    //  background-color: $tab-bg;
+    border-radius: 50px;
+    //  padding: 0.3rem 1rem;
+    width: fit-content;
+    gap: 0.2rem;
+    font-size: 13px;
+
+}
+
+.bs-repo_card-btnGrp {
+    margin-top: 0.85rem;
+}
+
+.bs-repo_syn-btn {
+    padding: 0.35rem 1rem;
+    font-size: 12px;
+}
+
+.bs-schedule__date {
+    padding: 0.3rem 0.75rem;
+    font-weight: 400;
+    filter: drop-shadow(0px 0.5px 1px rgba(0, 0, 0, 0.1));
+    font-size: 12px;
+}
+
+.bs-calender_icon {
+    font-size: 13px;
+    color: $black;
+    font-weight: 500;
+    margin-right: 0.2rem;
+}
+
+.bs-module__detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0.75em;
+}
+
+.bs-module_branch-state {
+    color: $primaryfont-color;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}

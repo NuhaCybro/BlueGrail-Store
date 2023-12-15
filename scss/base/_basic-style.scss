@@ -1,8 +1,41 @@
-body{
+body {
     font-family: 'Fira Sans', sans-serif;
     box-sizing: border-box;
     overflow-x: hidden;
 }
-.bs-border_btm{
+
+.bs-border_btm {
     border-bottom: 1px solid $border-dark;
+}
+
+.bs-tab_item {
+    .bs-nav_item__link {
+        color: $black;
+        font-size: 14px;
+        min-width: 80px;
+        padding: 0.7rem 2.5rem !important;
+        text-align: center;
+        font-weight: 400;
+        border-radius: 50px;
+
+        &.active {
+            background-color: $tab-bg;
+            color: $black;
+        }
+    }
+}
+
+.bs-para_text {
+    color: $primaryfont-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.bs-link{
+    color: $link-color;
+    text-decoration: none;
+}
+.bs-list__items{
+    padding-left: 0px;
+    list-style: none;
 }

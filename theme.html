@@ -15,7 +15,7 @@
         integrity="sha512-vgK7iuWG4Uq4GJHovntONntOoSduelAYImQTT3f0mvdUcI95qQgSmf4ldDhn/FNl3g/xouqOtsm/NxFqaTnxbA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Blue Grail App Store</title>
+    <title>Blue Grail Theme Store</title>
 </head>
 
 <body>
@@ -39,30 +39,16 @@
 
                 <ul class="navbar-nav bs-navbar_switch">
                     <li class="nav-item bs-nav_item">
-                        <a class="nav-link bs-nav_item__link active" href="#app">Apps</a>
+                        <a class="nav-link bs-nav_item__link " href="#app">Apps</a>
                     </li>
                     <li class="nav-item bs-nav_item">
-                        <a class="nav-link bs-nav_item__link" href="#theme">Theme</a>
+                        <a class="nav-link bs-nav_item__link active" href="#theme">Theme</a>
                     </li>
                 </ul>
 
                 <div class="bs-login_Submission">
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
-                        class="btn bs-button mx-2 submitBtn">Submit</button>
-                        <div class="btn-group">
-                            <div class="dropdown">
-                                <img src="images/user-profile.png" alt="User" class="rounded-circle" width="36"
-                                    height="36" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-                                    <a class="dropdown-item" href="#">Link 1</a>
-                                    <a class="dropdown-item" href="#">Link 2</a>
-                                    <a class="dropdown-item" href="#">Link 3</a>
-                                </div>
-                            </div>
-                        </div>
+                    <button id="submitBtn" class="btn bs-button mx-2 submitBtn">Submit</button>
+                    <a href=""><img src="images/user-profile.png" alt="User" class="rounded-circle" width="36" height="36" /></a>
                 </div>
 
 
@@ -73,32 +59,15 @@
                 <div id="menuLists" class="bs-menu_lists ">
                     <ul class="navbar-nav ">
                         <li class="nav-item bs-nav_item">
-                            <a class="nav-link bs-nav_item__link active" href="#app">Apps</a>
+                            <a class="nav-link bs-nav_item__link " href="#app">Apps</a>
                         </li>
                         <li class="nav-item bs-nav_item">
-                            <a class="nav-link bs-nav_item__link" href="#theme">Theme</a>
+                            <a class="nav-link bs-nav_item__link active" href="#theme">Theme</a>
                         </li>
                     </ul>
                     <div class="bs-mob-loginSubmit">
-                        <div class="btn-group">
-                            <div class="dropdown">
-                                <img src="images/user-profile.png" alt="User" class="rounded-circle" width="36"
-                                    height="36" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
-
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-
-                                    <a class="dropdown-item" href="#">Link 1</a>
-                                    <a class="dropdown-item" href="#">Link 2</a>
-                                    <a class="dropdown-item" href="#">Link 3</a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
-                            class="btn bs-button mx-2 bs-mob_submitBtn submitBtn">Submit</button>
-
-
+                        <a href=""><img src="images/user-profile.png" alt="User" class="rounded-circle" width="36" height="36" /></a>
+                        <button id="submitBtn" class="btn bs-button mx-2 bs-mob_submitBtn submitBtn">Submit</button>
                     </div>
 
 
@@ -106,9 +75,11 @@
             </div>
         </nav>
         <!-- END OF NAVBAR -->
+
+
     </header>
 
-    <main class="bs-store bs-store--apps">
+    <main class="bs-store bs-store--themes">
         <div class="container-fluid px-md-5">
 
             <section class="bs-section bs-hero-container">
@@ -191,24 +162,22 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="bg-section-header">
-                    <h2 class="bs-section-header-title">Top Apps</h2>
+                    <h2 class="bs-section-header-title">Top Themes</h2>
                     <a href="#" class="bs-section-header-link">View All</a>
                 </div>
 
                 <div class="bs-section-body">
                     <div class="bs-apps-card">
-                        <div class="bs-apps-card__banner-container">
-                            <img src="./images/banner-icon/magento-banner.jpeg" alt="Magento 2 Connector"
+                        <div class="bs-apps-card__banner-container bs-theme__banner-container">
+                            <img src="./images/theme-banner/women-beauty-34.webp" alt="women-beauty-34"
                                 class="bs-apps-card__banner" />
                         </div>
-                        <div class="bs-apps-card__content">
-                            <div class="bs-apps-card__icon-container">
-                                <img src="./images/banner-icon/magento-icon.png" alt="Magento 2 Connector"
-                                    class="bs-apps-card__icon" />
-                            </div>
+                        <div class="bs-apps-card__content bs-theme-card__content">
+
                             <div class="bs-apps-card__meta">
-                                <h3 class="bs-apps-card__title">Magento 2 Connector</h3>
+                                <h3 class="bs-apps-card__title bs-theme-card__title">Hue Backend Theme</h3>
                                 <span class="bs-apps-card__vendor bs-apps-card__vendor--verified"
                                     title="Verified">Cybrosys Technologies</span>
                                 <div class="bs-apps-card__meta">
@@ -236,17 +205,14 @@
                     </div>
 
                     <div class="bs-apps-card">
-                        <div class="bs-apps-card__banner-container">
-                            <img src="./images/banner-icon/shopify-banner.jpeg" alt="Shopify Connector"
-                                class="bs-apps-card__banner" />
+                        <div class="bs-apps-card__banner-container bs-theme__banner-container">
+                            <img src="./images/theme-banner/cinet-movie-streaming-html5-website-template_187851-2-original.webp"
+                                alt="Shopify Connector" class="bs-apps-card__banner" />
                         </div>
-                        <div class="bs-apps-card__content">
-                            <div class="bs-apps-card__icon-container">
-                                <img src="./images/banner-icon/shopify-icon.png" alt="Shopify Connector"
-                                    class="bs-apps-card__icon" />
-                            </div>
+                        <div class="bs-apps-card__content  bs-theme-card__content">
+
                             <div class="bs-apps-card__meta">
-                                <h3 class="bs-apps-card__title">Shopify Connector</h3>
+                                <h3 class="bs-apps-card__title bs-theme-card__title">Shopify Connector</h3>
                                 <span class="bs-apps-card__vendor bs-apps-card__vendor--verified"
                                     title="Verified">Cybrosys Technologies</span>
                                 <div class="bs-apps-card__meta">
@@ -274,18 +240,14 @@
                     </div>
 
                     <div class="bs-apps-card">
-                        <div class="bs-apps-card__banner-container">
-                            <img src="./images/banner-icon/woocommerce-banner.jpeg" alt="WooCommerce Connector"
-                                class="bs-apps-card__banner" />
+                        <div class="bs-apps-card__banner-container bs-theme__banner-container">
+                            <img src="./images/theme-banner/luxe_1.webp" alt="Luxe" class="bs-apps-card__banner" />
                         </div>
-                        <div class="bs-apps-card__content">
-                            <div class="bs-apps-card__icon-container">
-                                <img src="./images/banner-icon/woocommerce-icon.png" alt="WooCommerce Connector"
-                                    class="bs-apps-card__icon" />
-                            </div>
+                        <div class="bs-apps-card__content  bs-theme-card__content">
+
 
                             <div class="bs-apps-card__meta">
-                                <h3 class="bs-apps-card__title">WooCommerce Connector</h3>
+                                <h3 class="bs-apps-card__title bs-theme-card__title">Luxe Theme Pro</h3>
                                 <span class="bs-apps-card__vendor bs-apps-card__vendor--verified"
                                     title="Verified">Cybrosys Technologies</span>
                                 <div class="bs-apps-card__meta">
@@ -313,17 +275,14 @@
                     </div>
 
                     <div class="bs-apps-card">
-                        <div class="bs-apps-card__banner-container">
-                            <img src="./images/banner-icon/ayden-banner.jpeg" alt="Magento 2 Connector"
-                                class="bs-apps-card__banner" />
+                        <div class="bs-apps-card__banner-container bs-theme__banner-container">
+                            <img src="./images/theme-banner/starbis-business-multipurpose-bootstrap-5-website-template_60047-5-original.webp"
+                                alt="Starbis Business" class="bs-apps-card__banner" />
                         </div>
-                        <div class="bs-apps-card__content">
-                            <div class="bs-apps-card__icon-container">
-                                <img src="./images/banner-icon/adyen-icon.png" alt="Magento 2 Connector"
-                                    class="bs-apps-card__icon" />
-                            </div>
+                        <div class="bs-apps-card__content bs-theme-card__content">
+
                             <div class="bs-apps-card__meta">
-                                <h3 class="bs-apps-card__title">Adyen Connector</h3>
+                                <h3 class="bs-apps-card__title bs-theme-card__title">Starbis Business Multipurpose</h3>
                                 <span class="bs-apps-card__vendor bs-apps-card__vendor--verified"
                                     title="Verified">Cybrosys Technologies</span>
                                 <div class="bs-apps-card__meta">
@@ -353,26 +312,24 @@
             </section>
 
             <section class="bs-section">
+
                 <div class="bg-section-header">
-                    <h2 class="bs-section-header-title">New Apps</h2>
+                    <h2 class="bs-section-header-title">New Themes</h2>
                     <a href="#" class="bs-section-header-link">View All</a>
                 </div>
 
                 <div class="bs-section-body">
                     <div class="bs-apps-card">
-                        <div class="bs-apps-card__banner-container">
-                            <img src="./images/banner-icon/zoho-banner.jpeg" alt="Zoho Workplace"
+                        <div class="bs-apps-card__banner-container bs-theme__banner-container">
+                            <img src="./images/theme-banner/hubble_nutrition_homepage.webp" alt="Hubble Nutrition"
                                 class="bs-apps-card__banner" />
                         </div>
-                        <div class="bs-apps-card__content">
-                            <div class="bs-apps-card__icon-container">
-                                <img src="./images/banner-icon/zoho-icon.png" alt="Zoho Workplace"
-                                    class="bs-apps-card__icon" />
-                            </div>
+                        <div class="bs-apps-card__content bs-theme-card__content">
+
                             <div class="bs-apps-card__meta">
-                                <h3 class="bs-apps-card__title">Zoho Workplace</h3>
-                                <span class="bs-apps-card__vendor bs-apps-card__vendor--verified" title="Verified">Zoho,
-                                    Inc.</span>
+                                <h3 class="bs-apps-card__title bs-theme-card__title">Hubble Coffee Shop</h3>
+                                <span class="bs-apps-card__vendor bs-apps-card__vendor--verified"
+                                    title="Verified">Cybrosys Technologies</span>
                                 <div class="bs-apps-card__meta">
                                     <ul class="bs-apps-card__meta-items">
                                         <li class="bs-apps-card__meta-item">
@@ -380,37 +337,34 @@
                                                 <li class="bs-star bs-star--full"></li>
                                                 <li class="bs-star bs-star--full"></li>
                                                 <li class="bs-star bs-star--full"></li>
-                                                <li class="bs-star bs-star--full"></li>
+                                                <li class="bs-star bs-star--half"></li>
                                                 <li class="bs-star bs-star--empty"></li>
-                                                <span class="bs-stars__rating">(10)</span>
+                                                <span class="bs-stars__rating">(80)</span>
                                             </ul>
                                         </li>
                                         <li class="bs-apps-card__meta-item">
                                             <span class="bs-apps-stats bs-apps-stats--purchase"
                                                 aria-label="Purchase Count" title="Purchase Count"></span>
-                                            <span class="bs-apps-stats__count">300</span>
+                                            <span class="bs-apps-stats__count">1497</span>
                                         </li>
                                     </ul>
-                                    <span class="bs-apps-card__price">Free</span>
+                                    <span class="bs-apps-card__price">$405.13</span>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="bs-apps-card">
-                        <div class="bs-apps-card__banner-container">
-                            <img src="./images/banner-icon/stripe-banner.jpeg" alt="Stripe Connector"
+                        <div class="bs-apps-card__banner-container bs-theme__banner-container">
+                            <img src="./images/theme-banner/pandora_fashi_women_111_1.webp" alt="pandora_fashi_women"
                                 class="bs-apps-card__banner" />
                         </div>
-                        <div class="bs-apps-card__content">
-                            <div class="bs-apps-card__icon-container">
-                                <img src="./images/banner-icon/stripe-icon.png" alt="Stripe Connector"
-                                    class="bs-apps-card__icon" />
-                            </div>
+                        <div class="bs-apps-card__content  bs-theme-card__content">
+
                             <div class="bs-apps-card__meta">
-                                <h3 class="bs-apps-card__title">Stripe</h3>
+                                <h3 class="bs-apps-card__title bs-theme-card__title">Theme Fashion Store</h3>
                                 <span class="bs-apps-card__vendor bs-apps-card__vendor--verified"
-                                    title="Verified">Stripe, Inc.</span>
+                                    title="Verified">Cybrosys Technologies</span>
                                 <div class="bs-apps-card__meta">
                                     <ul class="bs-apps-card__meta-items">
                                         <li class="bs-apps-card__meta-item">
@@ -426,7 +380,7 @@
                                         <li class="bs-apps-card__meta-item">
                                             <span class="bs-apps-stats bs-apps-stats--download"
                                                 aria-label="Purchase Count" title="Purchase Count"></span>
-                                            <span class="bs-apps-stats__count">110</span>
+                                            <span class="bs-apps-stats__count">1080</span>
                                         </li>
                                     </ul>
                                     <span class="bs-apps-card__price">Free</span>
@@ -436,20 +390,17 @@
                     </div>
 
                     <div class="bs-apps-card">
-                        <div class="bs-apps-card__banner-container">
-                            <img src="./images/banner-icon/onedrive-banner.jpeg" alt="OneDrive"
+                        <div class="bs-apps-card__banner-container bs-theme__banner-container">
+                            <img src="./images/theme-banner/fashion-store-clean-black_1.webp" alt="Creative Full Black"
                                 class="bs-apps-card__banner" />
                         </div>
-                        <div class="bs-apps-card__content">
-                            <div class="bs-apps-card__icon-container">
-                                <img src="./images/banner-icon/onedrive-icon.png" alt="OneDrive"
-                                    class="bs-apps-card__icon" />
-                            </div>
+                        <div class="bs-apps-card__content  bs-theme-card__content">
+
 
                             <div class="bs-apps-card__meta">
-                                <h3 class="bs-apps-card__title">OneDrive</h3>
+                                <h3 class="bs-apps-card__title bs-theme-card__title">Creative Full Black</h3>
                                 <span class="bs-apps-card__vendor bs-apps-card__vendor--verified"
-                                    title="Verified">Microsoft</span>
+                                    title="Verified">Cybrosys Technologies</span>
                                 <div class="bs-apps-card__meta">
                                     <ul class="bs-apps-card__meta-items">
                                         <li class="bs-apps-card__meta-item">
@@ -475,19 +426,16 @@
                     </div>
 
                     <div class="bs-apps-card">
-                        <div class="bs-apps-card__banner-container">
-                            <img src="./images/banner-icon/todoist-banner.jpeg" alt="Magento 2 Connector"
+                        <div class="bs-apps-card__banner-container bs-theme__banner-container">
+                            <img src="./images/theme-banner/SpeedoMarket_109.webp" alt="Speedo Market"
                                 class="bs-apps-card__banner" />
                         </div>
-                        <div class="bs-apps-card__content">
-                            <div class="bs-apps-card__icon-container">
-                                <img src="./images/banner-icon/todoist-icon.png" alt="Magento 2 Connector"
-                                    class="bs-apps-card__icon" />
-                            </div>
+                        <div class="bs-apps-card__content bs-theme-card__content">
+
                             <div class="bs-apps-card__meta">
-                                <h3 class="bs-apps-card__title">Todoist</h3>
+                                <h3 class="bs-apps-card__title bs-theme-card__title">Theme Speedo Market</h3>
                                 <span class="bs-apps-card__vendor bs-apps-card__vendor--verified"
-                                    title="Verified">Doist, Inc.</span>
+                                    title="Verified">Cybrosys Technologies</span>
                                 <div class="bs-apps-card__meta">
                                     <ul class="bs-apps-card__meta-items">
                                         <li class="bs-apps-card__meta-item">
@@ -495,15 +443,15 @@
                                                 <li class="bs-star bs-star--full"></li>
                                                 <li class="bs-star bs-star--full"></li>
                                                 <li class="bs-star bs-star--full"></li>
-                                                <li class="bs-star bs-star--full"></li>
-                                                <li class="bs-star bs-star--full"></li>
-                                                <span class="bs-stars__rating">(13)</span>
+                                                <li class="bs-star bs-star--empty"></li>
+                                                <li class="bs-star bs-star--empty"></li>
+                                                <span class="bs-stars__rating">(65)</span>
                                             </ul>
                                         </li>
                                         <li class="bs-apps-card__meta-item">
                                             <span class="bs-apps-stats bs-apps-stats--download"
                                                 aria-label="Purchase Count" title="Purchase Count"></span>
-                                            <span class="bs-apps-stats__count">205</span>
+                                            <span class="bs-apps-stats__count">768</span>
                                         </li>
                                     </ul>
                                     <span class="bs-apps-card__price">Free</span>
@@ -514,6 +462,7 @@
                 </div>
             </section>
 
+
             <div class="bs-pagination-container">
                 <ul class="bs-paginations">
                     <li class="bs-pagination-item "><a class="bs-pagination__link active" href="#">1</a></li>
@@ -523,6 +472,10 @@
                                 class="ri-arrow-right-line bs-pagination-arrow_icon"></i></a></li>
                 </ul>
             </div>
+
+
+
+
         </div>
     </main>
     <div class="bs-modal__overlay" id="myModal">
@@ -564,27 +517,17 @@
     </div>
 
 
-
-
-
     <!-- Bootstrap JS, jQuery, Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
+    <script src="script.js"></script>
     <script>
         document.getElementById("bsMenuBar").addEventListener("click", function () {
             var menuLists = document.getElementById("menuLists");
             menuLists.classList.toggle("active");
         });
-
-
-
-
-
     </script>
-    <script src="script.js"></script>
-
 </body>
 
 </html>

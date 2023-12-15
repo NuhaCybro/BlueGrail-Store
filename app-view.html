@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.7.0/remixicon.css"
+        integrity="sha512-vgK7iuWG4Uq4GJHovntONntOoSduelAYImQTT3f0mvdUcI95qQgSmf4ldDhn/FNl3g/xouqOtsm/NxFqaTnxbA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Blue Grail App View</title>
+</head>
+
+<body>
+    <header class="bs-border_btm bs-top-navbar">
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg ">
+            <div class="container-fluid px-md-5">
+                <a class="navbar-brand" href="app-store.html">
+                    <img src="images/BlueGrail.png" width="30" height="30" class="d-inline-block align-top"
+                        alt="Your Logo" />
+                    <span class="bs-logo_text">Store</span>
+                </a>
+
+                <form class="search-form d-flex align-items-center position-relative">
+                    <button class="position-absolute btn my-2 my-sm-0 search-icon bs-search-icon" type="submit">
+                        <i class="ri-search-line"></i>
+                    </button>
+                    <input class="form-control mr-sm-2 pl-3 bs-searchbar" type="search"
+                        placeholder="Search for apps, categories, versions and more" aria-label="Search" />
+                </form>
+
+                <ul class="navbar-nav bs-navbar_switch">
+                    <li class="nav-item bs-nav_item">
+                        <a class="nav-link bs-nav_item__link active" href="#app">Apps</a>
+                    </li>
+                    <li class="nav-item bs-nav_item">
+                        <a class="nav-link bs-nav_item__link" href="#theme">Theme</a>
+                    </li>
+                </ul>
+
+                <div class="bs-login_Submission">
+                    <button id="submitBtn" class="btn bs-button mx-2 submitBtn">Submit</button>
+                    <img src="images/user-profile.png" alt="User" class="rounded-circle" width="36" height="36" />
+                </div>
+
+
+                <button id="bsMenuBar" class="bs-menubar">
+                    <i class="ri-menu-line"></i>
+
+                </button>
+                <div id="menuLists" class="bs-menu_lists ">
+                    <ul class="navbar-nav ">
+                        <li class="nav-item bs-nav_item">
+                            <a class="nav-link bs-nav_item__link active" href="#app">Apps</a>
+                        </li>
+                        <li class="nav-item bs-nav_item">
+                            <a class="nav-link bs-nav_item__link" href="#theme">Theme</a>
+                        </li>
+                    </ul>
+                    <div class="bs-mob-loginSubmit">
+                        <a href=""><img src="images/user-profile.png" alt="User" class="rounded-circle" width="36" height="36" /></a>
+                        <button id="submitBtn" class="btn bs-button mx-2 bs-mob_submitBtn submitBtn">Submit</button>
+                    </div>
+
+
+                </div>
+            </div>
+        </nav>
+        <!-- END OF NAVBAR -->
+    </header>
+
+    <main class="bs-store bs-store--apps">
+        <div class="container-fluid px-md-5">
+
+            <section class="bs-section bs-hero-container">
+                <div class="bs-hero-banner">
+                    <img src="./images/banner-icon/magento-banner.jpeg" class="bs-appview_banner bs-hero-banner_img"
+                        alt="hero-banner">
+                </div>
+            </section>
+
+
+            <section class="bs-section">
+                <div class="row m-0">
+                    <div class="col-lg-9">
+                        <div class="bs-appview_content">
+                            <div class="bs-apps-card__icon-container bs-appview-card_icon-container">
+                                <img src="./images/banner-icon/magento-icon.png" alt="Magento 2 Connector"
+                                    class="bs-apps-card__icon" />
+                            </div>
+                            <div class="bs-apps-card__meta">
+                                <h3 class="bs-appview_title">Magento 2 Connector</h3>
+                                <span
+                                    class="bs-apps-card__vendor bs-appview_vendor bs-apps-card__vendor--verified bs-appview_vendor--verified"
+                                    title="Verified">Cybrosys
+                                    Technologies</span>
+                                <div class="bs-apps-card__meta">
+                                    <ul class="bs-apps-card__meta-items bs-appview-meta__details">
+                                        <li class="bs-apps-card__meta-item">
+                                            <ul class="bs-stars">
+                                                <li class="bs-star bs-lg-star bs-star--full"></li>
+                                                <li class="bs-star bs-lg-star bs-star--full"></li>
+                                                <li class="bs-star bs-lg-star bs-star--full"></li>
+                                                <li class="bs-star bs-lg-star bs-star--half"></li>
+                                                <li class="bs-star bs-lg-star bs-star--empty"></li>
+                                                <span class="bs-stars__rating">(80)</span>
+                                            </ul>
+                                        </li>
+                                        <li class="bs-sm_divider">|</li>
+                                        <li class="bs-apps-card__meta-item">
+                                            <span class="bs-appview_verification--state">Verified Publisher</span>
+                                        </li>
+                                        <li class="bs-sm_divider">|</li>
+                                        <li class="bs-apps-card__meta-item">
+                                            <span class="bs-version__tag">v17</span>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bs-appview__details">
+                            <p class="bs-para_text">BlueGrail Magento connector will help you handle all your operations
+                                of
+                                Magento in BlueGrail
+                                without going to Magento backend. </p>
+
+                            <p class="bs-para_text">From Core Settings you can click on Magento websites or from
+                                instance
+                                you can click on smart
+                                buton to go in websites to check the website details imported from Magento in BlueGrail.
+                            </p>
+                        </div>
+                        <div class="bs-appview_detail-demo">
+                            <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                <li class="nav-item bs-tab_item" role="presentation">
+                                    <button class="nav-link bs-nav_item__link active" id="pills-home-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab"
+                                        aria-controls="pills-home" aria-selected="true">Description</button>
+                                </li>
+                                <li class="nav-item bs-tab_item" role="presentation">
+                                    <button class="nav-link bs-nav_item__link" id="pills-profile-tab"
+                                        data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">License</button>
+                                </li>
+                            </ul>
+
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+                                    <div class="bs-appview-preview">
+                                        <img src="images/banner-icon/image 2 (1).jpg" class="bs-appview_banner "
+                                            alt="appview-demo">
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab">
+                                    <p>License content goes here.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3">
+                        <div class="bs-appview__purchase-details">
+                            <div class="bs-appview_price-detail">
+                                <span class="bs-appview__price">$405.13</span>
+                                <div class="bs-apps-card__meta-item">
+                                    <span class="bs-apps-stats bs-apps-stats--purchase" aria-label="Purchase Count"
+                                        title="Purchase Count"></span>
+                                    <span class="bs-apps-stats__count">1487</span>
+                                </div>
+
+                                <button class="btn bs-button_active bs-appview_cartbtn">Add To Cart</button>
+                            </div>
+                            <div class="bs-appview_app-detail">
+                                <div class="bs-app-detail-describition">
+                                    <span class="bs-sm_title">Technical Name</span>
+                                    <span class="bs-para_text">cb_magento_ext</span>
+                                </div>
+                                <div class="bs-app-detail-describition">
+                                    <span class="bs-sm_title">License</span>
+                                    <span class="bs-para_text">AGPL</span>
+                                </div>
+                                <div class="bs-app-detail-describition">
+                                    <span class="bs-sm_title">Lines of Code</span>
+                                    <span class="bs-para_text">1123</span>
+                                </div>
+                                <div class="bs-app-detail-describition">
+                                    <span class="bs-sm_title">Website</span>
+                                    <span class="bs-para_text"><a href=""
+                                            class="bs-link">https://cybrosys.com</a></span>
+                                </div>
+                                <div class="bs-app-detail-describition">
+                                    <span class="bs-sm_title">Versions</span>
+                                    <ul class="bs-appview_version--list">
+                                        <li class="bs-apps-card__meta-item">
+                                            <span class="bs-version__tag">v17</span>
+                                        </li>
+                                        <li class="bs-apps-card__meta-item">
+                                            <span class="bs-version__tag">v16</span>
+                                        </li>
+                                        <li class="bs-apps-card__meta-item">
+                                            <span class="bs-version__tag">v15</span>
+                                        </li>
+                                        <li class="bs-apps-card__meta-item">
+                                            <span class="bs-version__tag">v14</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="bs-app-detail-describition">
+
+                                    <div class="accordion-item bs-appview_item">
+                                        <span class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button bs-appview-accordion bs-sm_title collapsed"
+                                                type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#flush-collapseOne" aria-expanded="false"
+                                                aria-controls="flush-collapseOne">
+                                                Dependencies
+                                            </button>
+                                        </span>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body bs-accordion_body">
+                                                <ul class="bs-list__items">
+                                                    <li> <p class="bs-para_text">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit.</li>
+                                                        <li> <p class="bs-para_text">Lorem ipsum dolor sit amet consectetur
+                                                            adipisicing elit.</p></li>
+                                                </ul>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="bs_appview-purchase--note">
+                                    <span class="bs-para_text">You bought this module and need support? </span>
+                                    <a href="" class="bs-para_text bs-link">Click Here!</a>
+                                </div>
+                                
+
+                            </div>
+                        </div>
+                    </div>
+            </section>
+        </div>
+    </main>
+    <div class="bs-modal__overlay" id="myModal">
+        <div class="bs-modal__container">
+            <div class="bs-border_btm">
+                <h2 class="bs-modal__heading">Create New Repository</h2>
+                <span class="bs-close-btn" id="closeBtn"><i class="ri-close-line"></i></span>
+            </div>
+            <div class="bs-modal_main--content bs-border_btm">
+                <form class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="inputRepo" class="form-label bs-label">Repo</label>
+                        <input type="text" class="form-control bs-form_input" id="inputRepo"
+                            placeholder="Repository name">
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="inputOwner" class="form-label bs-label">Owner</label>
+                        <input type="text" class="form-control bs-form_input" id="inputOwner" placeholder="Owner name">
+                    </div>
+                    <div class="col-12">
+                        <label for="Branch name" class="form-label  bs-label">Branch</label>
+                        <input type="text" class="form-control bs-form_input" id="inputAddress"
+                            placeholder="Branch name">
+                    </div>
+                    <div class="col-12">
+                        <label for="Access" class="form-label  bs-label">Access</label>
+                        <input type="text" class="form-control bs-form_input" id="inputAddress"
+                            placeholder="Branch name">
+                    </div>
+            </div>
+            <div class="bs-modal__footer">
+
+                <button class="btn bs-button_active">Submit</button>
+
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <!-- Bootstrap JS, jQuery, Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+       <script src="script.js"></script>
+    <script>
+        document.getElementById("bsMenuBar").addEventListener("click", function () {
+            var menuLists = document.getElementById("menuLists");
+            menuLists.classList.toggle("active");
+        });
+    </script>
+
+</body>
+
+</html>
