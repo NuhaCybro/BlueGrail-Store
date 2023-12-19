@@ -7,6 +7,9 @@
   color: #787878;
   min-width: 500px;
 }
+.bs-searchbar:focus {
+  box-shadow: none;
+}
 @media screen and (max-width: 1200px) {
   .bs-searchbar {
     min-width: 360px;
@@ -20,6 +23,9 @@
 
 .bs-search-icon {
   color: #787878;
+}
+.bs-search-icon:focus {
+  box-shadow: none;
 }
 
 .bs-logo_text {
@@ -85,7 +91,11 @@
   }
 }
 
-@media screen and (max-width: 992px) {
+.bs-login_Submission {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 576px) {
   .bs-login_Submission {
     display: none;
   }
@@ -109,17 +119,24 @@
   justify-content: space-between;
   display: none;
 }
-.bs-menu_lists.active {
-  display: flex;
+@media screen and (max-width: 992px) {
+  .bs-menu_lists.active {
+    display: flex;
+  }
 }
 
 .bs-mob-loginSubmit {
-  display: flex;
-  align-items: center;
-  margin-top: 2rem;
+  display: none;
 }
-.bs-mob-loginSubmit .bs-mob_submitBtn {
-  width: 100%;
+@media screen and (max-width: 576px) {
+  .bs-mob-loginSubmit {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .bs-mob-loginSubmit .bs-mob_submitBtn {
+    width: 100%;
+  }
 }
 
 .bs-button {
@@ -127,9 +144,14 @@
   filter: drop-shadow(0px 0.5px 2px rgba(0, 0, 0, 0.15));
   font-size: 12.8px;
   font-weight: 500;
+  background-color: #ffffff;
+  color: #505050;
 }
 .bs-button:focus {
   box-shadow: none;
+}
+.bs-button:active {
+  filter: none;
 }
 
 .bs-filter-dropdown_btn {
@@ -148,6 +170,12 @@
 }
 .bs-filter-dropdown_btn:focus {
   box-shadow: none;
+}
+@media screen and (max-width: 576px) {
+  .bs-filter-dropdown_btn {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+  }
 }
 
 .bs-filter-dropdown_btn::after {
@@ -471,6 +499,92 @@ body {
 .bs-list__items {
   padding-left: 0px;
   list-style: none;
+}
+
+.bs-modal__overlay {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.75);
+  align-items: center;
+  justify-content: center;
+  z-index: 1111;
+}
+
+.bs-modal__container {
+  background: #ffffff;
+  padding: 1.3rem 1.8rem;
+  border-radius: 5px;
+  border-radius: 10px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.05);
+  width: 540px;
+  max-width: 50%;
+  overflow: auto;
+  position: relative;
+}
+@media screen and (max-width: 992px) {
+  .bs-modal__container {
+    max-width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .bs-modal__container {
+    max-width: 90%;
+  }
+}
+
+.bs-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.bs-modal__heading {
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.bs-modal_main--content {
+  padding: 1.8rem 0;
+}
+
+.bs-label {
+  color: #000;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.bs-form_input {
+  border-radius: 2px;
+  border: 1px solid #dcdcdc;
+  padding: 0.45rem 0.75rem;
+  background: #FFF;
+  font-size: 14px;
+  color: #787878;
+}
+.bs-form_input:focus {
+  box-shadow: none;
+}
+
+.bs-modal__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.8rem;
+  margin-top: 0.75rem;
+}
+@media screen and (max-width: 576px) {
+  .bs-modal__footer button {
+    width: 100%;
+  }
 }
 
 .bg-section-header {
@@ -900,7 +1014,7 @@ body {
 }
 
 .bs-apps-repo__content {
-  padding: 0.75rem;
+  padding: 1rem;
 }
 
 .bs-repo_detail {
@@ -927,4 +1041,33 @@ body {
 .bs-repo_syn-btn {
   padding: 0.35rem 1rem;
   font-size: 12px;
+}
+
+.bs-schedule__date {
+  padding: 0.3rem 0.75rem;
+  font-weight: 400;
+  filter: drop-shadow(0px 0.5px 1px rgba(0, 0, 0, 0.1));
+  font-size: 12px;
+}
+
+.bs-calender_icon {
+  font-size: 13px;
+  color: #000;
+  font-weight: 500;
+  margin-right: 0.2rem;
+}
+
+.bs-module__detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 0.75em;
+}
+
+.bs-module_branch-state {
+  color: #505050;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
 }/*# sourceMappingURL=main.css.map */

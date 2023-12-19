@@ -49,20 +49,20 @@
                 <div class="bs-login_Submission">
                     <button type="button" data-bs-toggle="modal" data-bs-target="#myModal"
                         class="btn bs-button mx-2 submitBtn">Submit</button>
-                        <div class="btn-group">
-                            <div class="dropdown">
-                                <img src="images/user-profile.png" alt="User" class="rounded-circle" width="36"
-                                    height="36" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
-                                    aria-expanded="false">
+                    <div class="btn-group">
+                        <div class="dropdown">
+                            <img src="images/user-profile.png" alt="User" class="rounded-circle" width="36" height="36"
+                                id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">
 
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-                                    <a class="dropdown-item" href="#">Link 1</a>
-                                    <a class="dropdown-item" href="#">Link 2</a>
-                                    <a class="dropdown-item" href="#">Link 3</a>
-                                </div>
+                                <a class="dropdown-item" href="#">Link 1</a>
+                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="#">Link 3</a>
                             </div>
                         </div>
+                    </div>
                 </div>
 
 
@@ -523,6 +523,7 @@
                                 class="ri-arrow-right-line bs-pagination-arrow_icon"></i></a></li>
                 </ul>
             </div>
+
         </div>
     </main>
     <div class="bs-modal__overlay" id="myModal">
@@ -553,10 +554,9 @@
                             placeholder="Branch name">
                     </div>
             </div>
+
             <div class="bs-modal__footer">
-
                 <button class="btn bs-button_active">Submit</button>
-
             </div>
 
 
@@ -571,18 +571,13 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-
     <script>
         document.getElementById("bsMenuBar").addEventListener("click", function () {
             var menuLists = document.getElementById("menuLists");
             menuLists.classList.toggle("active");
         });
-
-
-
-
-
     </script>
+
     <script src="script.js"></script>
 
 </body>
